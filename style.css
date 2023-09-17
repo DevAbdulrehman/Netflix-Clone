@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.header-container {
+  /* border: 10px solid yellow; */
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.netflix-bg {
+  width: auto;
+  height: auto;
+  transform: scale(1.15) translateX(-7%) translateY(-6%);
+  object-fit: cover;
+}
+.header-div {
+  /* display: grid; */
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.807),
+    rgba(0, 0, 0, 0.531),
+    rgba(0, 0, 0, 0.384)
+  );
+  /* border: 6px solid blue; */
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.nav_netflix {
+  /* border: 7px solid yellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.netflix-logo {
+  fill: red;
+  width: 200px;
+  height: 50px;
+}
+
+.netflix-login {
+  width: 100px;
+  height: 35px;
+  padding: 2px 7px;
+}
+
+@media screen and (min-width:1280px) {
+  .nav_netflix {
+    width: 77%;
+    margin: auto;
+  }
+  
+}
+
+@media screen  and (max-width:1280px) {
+
+  .nav_netflix {
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+}
+
+@media  screen and (max-width:960px) {
+  .netflix-logo {
+    width: 100px;
+  }
+}
+
+.text-heading-header {
+  margin-top: 300px;
+  /* border: 5px solid greenyellow; */
+}
+
+.header-heading-first-line {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.header-heading-second-line {
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.header-heading-third-line {
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.email-section {
+  /* border: 3px solid orange;  */
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-email-input {
+}
+
+.header-form {
+}
+
+.get-started-btn { 
+}
+
+.line-break {
+  height: 10px;
+  background-color: gray;
+}
+
+.section-tv {
+  background-color: black;
+}
+
+.section-tv-child {
+  /* border: 3px solid brown; */
+}
+
+.child-text {
+}
+
+.tv-section-heading {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.tv-section-description {
+  font-weight: 500;
+}
+
+
+.downlaod-shows-section {
+  background-color: black;
+}
+
+.mobile-img {
+}
+
+.section-download-heading {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.section-download-desc {
+  font-weight: 500;
+}
+
+/* .watch-every_where {
+  background-color: black;
+}
+
+.watch-every_where-child {
+  width: 45%;
+}
+
+.watch-every_where-heading {
+  font-size: 60px ;
+} */
+
+/* Section (profile for kids) styling start */
+
+.section-kids {
+  background-color: black;
+}
+
+.section-kids-child {
+
+}
+
+.section-kids-desc-heading {
+  font-size: 55px;
+}
+
+.section-kids-desc {
+  font-size: 30px;
+  font-weight: 500;
+}
+/* Section (profile for kids) styling end */
+
+.accordion-heading {
+  font-size: 60px;
+}
+
+.accordion-item {
+  margin: 10px 0 !important;
+  color: white;
+  background-color: rgb(45,45,45) !important;
+}
+
+.accordion-header {
+  color: white !important;
+  fill: white !important;
+}
+
+.accordion-button {
+  font-size: 30px;
+  font-weight: 500;
+  color: white !important;
+  background-color: rgb(45,45,45) !important;
+}
+
+.accordion-button:hover, .accordion-button:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.accordion-button::after {
+  fill: white !important;
+  color: white !important;
+  background-color: white !important;
+}
+
+.accordion-body {
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.footer-container {
+  height: auto;
+}
+
+.footer-container-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: right;
+}
+a {
+  display: block;
+  padding: 3px 0;
+  color: rgb(184, 180, 180);
+}
+select {
+  width: 140px !important;
+  color: white !important;
+  border-color: gray !important;
+}
+
+@media screen and (max-width:1280px) {
+  .footer-container {
+    padding: 0 0 !important;
+  }
+
+  .footer-container-child {
+    padding: 1rem 0 !important;
+    margin: 0 40px !important;
+  }
+
+  .link-questions {
+    padding-left:0 !important;
+    padding-right: 0 !important;
+    margin: 0 40px !important;
+  }
+  .select-lang {
+    padding: 0 38px !important;
+  }
+
+  .form-select {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .Netflix-Pakistan {
+    margin: 0 0 !important;
+  }
+  
+}
+
+@media screen and (max-width:960px) {
+  .footer-container-child {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
