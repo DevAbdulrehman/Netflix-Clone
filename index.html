@@ -11,18 +11,14 @@
     <!-- Main header container Start -->
     <div class="header-container">
       <!-- Background Image start -->
-      <img
-        class="netflix-bg"
-        src="/PK-en-20230911-popsignuptwoweeks-perspective_alpha_website_small.jpg"
-        alt=""
-      />
+      <img class="netflix-bg" src="/bg-netflix.jpg" alt />
       <!-- Background image end -->
 
       <!-- Main div for header sontainer start -->
       <div class="header-div text-white">
         <!-- Nav bar started -->
 
-        <div class="nav_netflix my-5">
+        <div class="nav_netflix my-3">
           <svg
             viewBox="0 0 111 30"
             version="1.1"
@@ -38,7 +34,13 @@
               ></path>
             </g>
           </svg>
-          <button class="btn btn-danger netflix-login fw-bolder text-white">
+          <button
+            type="button"
+            class="btn btn-danger netflix-login fw-bold text-white px-3 py-1"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo"
+          >
             Sign in
           </button>
         </div>
@@ -48,7 +50,7 @@
         <!-- Main text area and button div start -->
         <div class="text-heading-header mx-auto">
           <!-- ALl the text start -->
-          <h1 class="text-center header-heading-first-line w-100">
+          <h1 class="text-center header-heading-first-line">
             Unlimited movies, TV shows, and more
           </h1>
           <p
@@ -56,33 +58,31 @@
           >
             Watch anywhere. Cancel anytime.
           </p>
-          <p
-            class="fs-4 text-center text-white header-heading-third-line w-100"
-          >
+          <p class="fs- text-center text-white header-heading-third-line w-100">
             Ready to watch? Enter your email to create or restart your
             membership.
           </p>
           <!-- All the text end -->
 
           <!-- Email and get button start -->
-          <div class="container pb-5 mx-auto mt-3 p-0 pb-5 ">
-            <div class="email-section w-100 row mx-auto gy-2 justify-content-center mt-3">
+          <div class="main-div-for-email-button">
+            <div class="email-section mx-auto borde border-2 border-danger">
               <!-- Email start -->
-              <div class="form-floating col-sm-6 col-12 header-email-input">
+              <div class="form-floating header-email-input">
                 <input
                   type="email"
                   class="form-control header-form"
                   id="floatingInput"
                   placeholder="name@example.com"
                 />
-                <label class="text-white ps-3" for="floatingInput"
+                <label class="ps-4 label-email" for="floatingInput"
                   >Email address</label
                 >
               </div>
               <!-- Email end -->
 
               <!-- "Get started" Button start -->
-              <button class="btn btn-danger get-started-btn col-8 fs-6 col-sm-4 p3 fw-bold fs-4 col-md-3">
+              <button class="btn btn-danger get-started-btn">
                 Get started <span>></span>
               </button>
             </div>
@@ -98,21 +98,21 @@
 
     <!-- Section (enjouy your tv) start -->
     <section>
-      <div class="section-tv ">
-        <div
-          class="container-xl row px-0 my-5 mx-auto section-tv-child"
-        >
-          <div
-            class="child-text text-center text-lg-start col-lg-6 pt-5"
-          >
+      <div class="section-tv">
+        <div class="container-xl row px-0 my-5 mx-auto section-tv-child">
+          <div class="child-text text-center text-lg-start col-lg-6 pt-5">
             <h1 class="text-white tv-section-heading">Enjoy on your TV</h1>
             <p class="text-white fs-3 tv-section-description">
               Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
               Blu-ray players,&nbsp; and more.
             </p>
           </div>
-          <div class="child-tv col-lg-6 ">
-            <img src="/tv.png" alt="image" class="w-100 h-75 img-fluid" />
+          <div class="child-tv col-lg-6">
+            <img
+              src="/tv.png"
+              alt="image"
+              class="tv-img w-100 h-75 img-fluid"
+            />
           </div>
         </div>
       </div>
@@ -128,7 +128,7 @@
           <div class="child-image-stranger_things col-lg-6 p-0">
             <img
               src="/mobile-0819.jpg"
-              alt=""
+              alt
               class="mobile-img w-100 img-fluid"
             />
           </div>
@@ -150,17 +150,19 @@
     <div class="line-break"></div>
 
     <!-- Section (Watch everywhere..) start -->
-    <section >
-      <div class="container row mx-auto p-0 ">
-          <div class="col-lg-6 col-12 d-grid align-content-center my-lg-5 text-center">
-            <h1 class="text-white fw-bold m-xl-0 mt-5 watch-every_where-heading">
-              Watch everywhere
-            </h1>
-            <p class="text-white fs-4 mt-lg-3 m-lg-0 mb-5 watch-every_where-desc">
-              Stream unlimited movies and TV shows on your phone, tablet,
-              laptop, and TV.
-            </p>
-          </div>
+    <section>
+      <div class="container row mx-auto p-0">
+        <div
+          class="col-lg-6 col-12 d-grid align-content-center my-lg-5 text-center"
+        >
+          <h1 class="text-white fw-bold m-xl-0 mt-5 watch-every_where-heading">
+            Watch everywhere
+          </h1>
+          <p class="text-white fs-4 mt-lg-3 m-lg-0 mb-5 watch-every_where-desc">
+            Stream unlimited movies and TV shows on your phone, tablet, laptop,
+            and TV.
+          </p>
+        </div>
       </div>
     </section>
     <!-- Section (Watch everywhere..) end -->
@@ -170,9 +172,9 @@
     <!-- Section (profile for kids...) start -->
     <section>
       <div class="section-kids my-3">
-        <div class="container row section-kids-child p-0 mx-auto">
-          <div class="section-kids-img col-lg-6">
-            <img src="/kids.png" alt="" class="w-100 img-fluid" />
+        <div class="container row section-kids-child py-2 p-0 mx-auto">
+          <div class="section-kids-img mt-5 col-lg-6">
+            <img src="/kids.png" alt class="w-100 img-fluid" />
           </div>
           <div
             class="section-kids-text d-grid align-content-center py-5 col-lg-6 text-center text-lg-start my-lg-5"
@@ -397,29 +399,28 @@
         >
           Ready to watch? Enter your email to create or restart your membership.
         </h3>
-        <div class="container pb-5 mx-auto mt-3 p-0 pb-5 ">
-          <div
-            class="bottom-email-section w-100 row mx-auto  gy-2 justify-content-center mt-3"
-          >
-            <div class="form-floating col-sm-6 col-12">
-              <input
-                type="email"
-                class="form-control bottom-form"
-                id="floatingInput"
-                placeholder="name@example.com"
-              />
-              <label class="text-white ps-3" for="floatingInput"
-                >Email address</label
-              >
-            </div>
-            <!-- Email end -->
+        <div class="container pb-5 mx-auto mt-3 p-0 pb-5">
+          <div class="main-div-for-email-button">
+            <div class="email-section mx-auto borde border-2 border-danger">
+              <!-- Email start -->
+              <div class="form-floating header-email-input">
+                <input
+                  type="email"
+                  class="form-control header-form"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label class="ps-4 label-email" for="floatingInput"
+                  >Email address</label
+                >
+              </div>
+              <!-- Email end -->
 
-            <!-- "Get started" Button start -->
-            <button
-              class="btn btn-danger get-started-btn-bottom col-8 fs-6 col-sm-4 p3 fw-bold fs-4 col-md-3"
-            >
-              Get started <span>></span>
-            </button>
+              <!-- "Get started" Button start -->
+              <button class="btn btn-danger get-started-btn">
+                Get started <span>></span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -431,24 +432,31 @@
     <footer>
       <div class="footer-container p-5">
         <div class="link-questions py-3 mx-5 px-5">
-          <a href="">Questions? Contact us</a>
+          <a class="footer-link" href>Questions? Contact us</a>
         </div>
         <div class="footer-container-child borde border-3 mx-5 px-5">
           <div class="footer-first-column">
-            <a href="">FAQ</a><a href="">Investor Relations</a
-            ><a href="">Privacy</a><a href="">Speed Test</a>
+            <a class="footer-link" href>FAQ</a
+            ><a class="footer-link" href>Investor Relations</a
+            ><a class="footer-link" href>Privacy</a
+            ><a class="footer-link" href>Speed Test</a>
           </div>
           <div class="footer-second-column">
-            <a href="">Help Center</a><a href="">Jobs</a
-            ><a href="">Cookie Preferences</a><a href="">Legal Notices</a>
+            <a class="footer-link" href>Help Center</a
+            ><a class="footer-link" href>Jobs</a
+            ><a class="footer-link" href>Cookie Preferences</a
+            ><a class="footer-link" href>Legal Notices</a>
           </div>
           <div class="footer-third-column">
-            <a href="">Account</a><a href="">Ways to watch</a
-            ><a href="">Corporate Information</a><a href="">Only on Netflix</a>
+            <a class="footer-link" href>Account</a
+            ><a class="footer-link" href>Ways to watch</a
+            ><a class="footer-link" href>Corporate Information</a
+            ><a class="footer-link" href>Only on Netflix</a>
           </div>
           <div class="footer-fourth-column">
-            <a href="">Media Center</a><a href="">Terms of Use</a
-            ><a href="">Contact Us</a>
+            <a class="footer-link" href>Media Center</a
+            ><a class="footer-link" href>Terms of Use</a
+            ><a class="footer-link" href>Contact Us</a>
           </div>
         </div>
         <div class="select-lang borde border-2 w-50 px-5">
@@ -468,6 +476,99 @@
       </div>
     </footer>
 
+    <!-- Modal (Sign in Form) code start -->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-fullscreen-md-down modal-fullscreen-sm-down"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title text-white" id="exampleModalLabel">
+              Sign In
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control login-input border-0"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label
+                  class="ps-4 login-input label-email text-white"
+                  for="floatingInput"
+                  >Email address</label
+                >
+              </div>
+              <div class="form-floating mb-5">
+                <input
+                  type="email"
+                  class="form-control login-input border-0"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label
+                  class="ps-4 label-email login-input text-white"
+                  for="floatingInput"
+                  >Password</label
+                >
+              </div>
+              <div>
+                <button
+                  type="button"
+                  class="login-button btn btn-danger w-100 py-3 fw-bold"
+                >
+                  Sign in
+                </button>
+              </div>
+
+              <div class="form-check mt-1">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Remember Me
+                </label>
+                <a class="need-help-link" href="#">Need Help?</a>
+              </div>
+            </form>
+            <div class="Sign_up-login mt-4">
+              <span style="color: #737373">New to Netflix?</span>
+              <a href="#" style="color: white">Sign up now</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal (Sign ing Form) code end -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
