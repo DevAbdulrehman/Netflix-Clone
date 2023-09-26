@@ -8,6 +8,8 @@ body {
   background-color: black;
 }
 
+/* Main header container styling start */
+
 .header-container {
   /* border: 10px solid yellow; */
   height: 787px;
@@ -183,10 +185,14 @@ body {
 
 }
 
+/* Main header container styling end */
+
 .line-break {
   height: 10px;
   background-color: gray;
 }
+
+/* Tv-section styling start */
 
 .section-tv {
   background-color: black;
@@ -224,6 +230,10 @@ body {
   
 }
 
+/* Tv section styling end */
+
+/* Download shows section styling start */
+
 .downlaod-shows-section {
   background-color: black;
 }
@@ -243,8 +253,9 @@ body {
   .section-download-heading{
     font-size: 30px;
   }
-  
 }
+
+/* Download shows section styling end */
 
 /* Section (profile for kids) styling start */
 
@@ -271,6 +282,8 @@ body {
 }
 
 /* Section (profile for kids) styling end */
+
+/* Section FAQ styling start */
 
 .accordion-heading {
   font-size: 60px;
@@ -316,6 +329,10 @@ body {
     font-size: 30px;
   }
 }
+
+/* Section FAQ styling end */
+
+/* Fooeter styling start */
 
 .footer-container {
   height: auto;
@@ -378,6 +395,8 @@ select {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* Footer styling end */
 
 /* Modal (Sign in Form) styling start */
 
